@@ -1,0 +1,13 @@
+import mongoose from "mongoose"
+ 
+// Define the schema for the information token of the user
+const userSchema = new mongoose.Schema({
+    name:{type: String, required:true},
+    email:{ type: String, required: true, unique: true },
+    password:{ type: String, required: true },
+},{minimize: false}
+)
+
+const userModel = mongoose.model.user || mongoose.model("user", userSchema);
+
+export default userModel;

@@ -1,0 +1,22 @@
+.Container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;  /* οριζόντια διάταξη */
+}
+
+.sidebar {
+  width: 22%;
+  min-height: 100vh;
+  border-right: 2px solid #ccc;
+  background-color: white;
+  padding: 1rem;
+}
+
+.main-content {
+  width: 78%;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  overflow-y: auto;
+}

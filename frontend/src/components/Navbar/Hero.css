@@ -1,0 +1,130 @@
+.Hero{
+    position: relative;
+    background: url('/header_img1.jpg') no-repeat;
+    height: 34vw;
+    background-size: contain;
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.Hero-contents{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  color: white; 
+  animation: fadeIn 3s;
+}
+
+.Ηero-contents h1, .Ηero-contents h2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.Hero-contents .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: orange;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:black;
+    font-weight: 700;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.Hero-contents .btnLogin-popup:hover{
+    background: black;
+    color: white;
+}
+
+
+
+.Hero-contents h1 {
+  font-size: 5rem; 
+  margin: 12px 0;
+}
+
+.Hero-contents h2 {
+  font-size: 2rem; 
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  .Hero {
+    height: 60vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .Hero-contents {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Hero-contents h1 {
+    font-size: 2.5rem;
+  }
+
+  .Hero-contents h2 {
+    font-size: 1.2rem;
+  }
+
+  .Hero-contents .btnLogin-popup {
+    width: 120px;
+    height: 45px;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero {
+    height: 55vh;
+    width: 95vw;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Hero-contents {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Hero-contents h1 {
+    font-size: 2rem;
+  }
+
+  .Hero-contents h2 {
+    font-size: 1rem;
+  }
+
+  .Hero-contents .btnLogin-popup {
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+}

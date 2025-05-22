@@ -1,0 +1,131 @@
+.menu-display-container{
+  padding-left: 1rem;    
+  padding-right: 1rem;
+  padding-top: 3rem;    
+  padding-bottom: 3rem;
+  max-width: 72rem;      
+  margin-left: auto;     
+  margin-right: auto;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 1.5rem; 
+}
+
+.menu-h1 {
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  color: #2d3748; 
+}
+
+.category-display {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+.category-display h2 {
+  font-size: 1.5rem; 
+  font-weight: 500; 
+  margin-bottom: 1rem; 
+  color: #4a5568; 
+}
+
+.category-style {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem; 
+  border-radius: 9999px; 
+  font-weight: 500; 
+  font-size: 0.875rem; 
+  transition: all 0.2s ease; 
+  background-color: #e5e7eb;
+  color: #000; 
+}
+
+.category-style:hover {
+  background-color: #fed7aa; 
+}
+
+.category-style.active {
+  background-color: #f97316; 
+  color: white;
+}
+
+.menu-display {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 2rem; 
+}
+
+@media (min-width: 768px) {
+  .menu-display {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+.menu-product {
+display: flex;
+  align-items: center;  
+  gap: 1.5rem;          
+  padding: 1rem;        
+  border: 1px solid #f3f4f6;  
+  border-radius: 0.75rem;      
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);   
+}
+
+.menu-image {
+  width: 7.5rem;           
+  height: 7.5rem;         
+  object-fit: cover;      
+  border-radius: 50%;      
+}
+
+.menu-pn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-product h3 {
+  font-size: 1.125rem; 
+  font-weight: 600;    
+  color: #1F2937;   
+}
+
+.menu-span{
+  font-size: 1.125rem;     
+  font-weight: 600;        
+  color: #1693f9;          
+  position: relative;       
+  margin-left: 1rem;       
+}
+
+.menu-span::before {
+  content: '';
+  position: absolute;
+  width: 2.5rem; 
+  border-bottom: 1px dotted #cbd5e1; 
+  left: -3rem; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+
+.menu-ml{
+  font-size: 0.875rem;  
+  color: #6b7280;        
+  margin-top: 0.25rem;
+}
+
+.menu-nl{
+  text-align: center;
+  grid-column: span 2;
+  color: #6b7280; 
+}
+
+.category-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; 
+}

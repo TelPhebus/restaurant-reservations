@@ -1,0 +1,13 @@
+.footer{
+    color: aliceblue;
+    background: rgb(87, 86, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 100px;
+    font-size: max(3vw, 20px);
+    font-weight: 500;
+    margin: auto auto;
+}

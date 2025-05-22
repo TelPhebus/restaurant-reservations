@@ -1,0 +1,72 @@
+
+.admin-table-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.admin-table-container h2 {
+
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #374151;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.admin-table {
+  overflow-x: auto;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-table-field {
+width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.75rem; 
+  overflow: hidden;
+}
+
+.admin-table-header{
+    background-color: #6284cc;
+    text-align: left;
+}
+
+.admin-table-header th{
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.admin-reservation{
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s;
+}
+
+.admin-reservation:hover {
+  background-color: #f9fafb; 
+}
+
+.admin-reservation td {
+  padding: 12px;
+}
+
+.admin-delete{
+    background-color: #ef4444;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-delete:hover {
+  background-color: #dc2626; 
+}

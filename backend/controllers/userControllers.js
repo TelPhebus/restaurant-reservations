@@ -79,4 +79,13 @@ const registerUser = async (req, res) => {
     }
 }
 
+const getAllUsers = async (req, res) => {
+    try {
+        const users = await userModel.find().select("-password");
+        res.json({success: true, users});
+    } catch (error) {
+        res.status(500).json({success:false, message: "Error fetching users"});
+    }
+}
+
 export {loginUser, registerUser}
